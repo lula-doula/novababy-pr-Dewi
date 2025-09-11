@@ -1844,3 +1844,10 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/* Ajuste de logo para móvil */
+@media (max-width: 768px) {
+  .logo-mobile {
+    max-height: 40px !important;
+    height: auto !important;
+  }
+}
