@@ -40,34 +40,19 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo me-auto me-xl-0">
-  <img src="assets/img/logo-nova-baby-pr.png" alt="Nova Baby PR - Acompañamiento Consciente al Parto" class="logo-mobile">
+     <a href="index.html" class="logo me-auto me-xl-0">
+  <img src="assets/img/logo-nova-baby-pr.png" alt="Nova Baby PR" class="logo-img">
 </a>
+
+
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
+          <li><a href="#educadora-doula">Educadora/Doula</a></li>
+           <li><a href="#mis-servicios">Mis Servicios</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+           <li><a href="#preparacion-integral">Preparación Integral</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -98,9 +83,10 @@
 
   <!-- Contenido principal (centrado) -->
 <div class="container d-flex flex-column align-items-center text-center">
+  <h1 class="mobile-logo-text">Nova Baby PR</h1>
   <h2 data-aos="fade-up" data-aos-delay="100">Preparación Consciente al Parto</h2>
   <p data-aos="fade-up" data-aos-delay="200">
-    Clases personalizadas, acompañamiento doula y mindfulness para un embarazo, parto y posparto plenos.
+    Clases privadas de preparaciónal parto y apoyo en la lactancia materna directamente en tu hogar en Puerto Rico. Acompañamiento expertopara futuras mamás que buscan bienestar y confianza en esta etapa z
   </p>
   
   <!-- Botón alineado a la izquierda dentro de un contenedor con ancho completo -->
@@ -116,7 +102,7 @@
 
     <!-- About Section -->
     <!-- Sobre Mí Section - Personalizada para Nova Baby PR -->
-<section id="about" class="about section">
+ <section id="educadora-doula"></section>
   <div class="container" data-aos="fade-up">
 
     <div class="row gy-4">
@@ -208,12 +194,12 @@
     </section><!-- /Stats Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section">
+     <section id="mis-servicios"></section>
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Nuestros servicios<br></p>
+        <p>Mis servicios<br></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -351,10 +337,10 @@
         </div>
 
       </div>
-    </div>
-  </div>
+   
 </section>
     <!-- Features Section -->
+    <section id="preparacion-integral"></section> 
     <section id="features" class="features section">
 
       <div class="container">
@@ -513,11 +499,11 @@
     </section><!-- /Features Section -->
 
    <!-- Services 2 Section -->
-<section id="services-2" class="services-2 section light-background">
+<section id="blogs"></section>
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Tu Camino conmigo</h2>
+    <h2>blogs</h2>
     <p>Reflexiones y guías para acompañarte en tu embarazo, parto y posparto</p>
   </div><!-- End Section Title -->
 
@@ -1133,6 +1119,18 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <!-- Proyecto activo - NovaBaby PR - 31/08/2025 -->
+   <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.header');
+    header.classList.add('expand-logo');
+
+    setTimeout(() => {
+      header.classList.remove('expand-logo');
+      header.classList.add('shrink-logo');
+    }, 3000); // 3 segundos agrandado, luego se achica
+  });
+</script>
+
 
 </body>
 

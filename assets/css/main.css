@@ -932,7 +932,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: color-mix(in srgb, var(--background-color), transparent 60%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1851,3 +1851,60 @@ section,
     height: auto !important;
   }
 }
+/* Estado inicial: logo grande, centrado y ocupando parte de la pantalla */
+.header.expand-logo .logo img {
+  max-height: 90vh;  /* Logo casi 60% de la altura de la ventana */
+  max-width: 120vw;   /* Logo ancho máxima 90% viewport */
+  margin: 0 auto;
+  display: block;
+  position: fixed;
+  top: 10vh;         /* Separado del top */
+  left: 30%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  border-radius: 16px;
+  transition: all 0.8s ease;
+}
+
+/* Estado final: logo más pequeño pero visible en header */
+.header.shrink-logo .logo img {
+  max-height: 110px;   /* Tamaño un poco más grande que antes */
+  max-width: 160px;
+  position: static;
+  margin-right: 8px;
+  transform: none;
+  box-shadow: none;
+  border-radius: 0;
+  transition: all 0.8s ease;
+}
+
+/* Ajuste para móvil en estado final */
+@media (max-width: 600px) {
+  .header.shrink-logo .logo img {
+    max-height: 80px;
+    max-width: 120px;
+    margin-right: 4px;
+  }
+}
+/* Ajuste del logo en móviles */
+@media (max-width: 600px) {
+  .header .logo img {
+    max-height: 80px;  /* Tamaño más pequeño y proporcional para móvil */
+    margin: 0 auto;
+    display: block;
+  }
+}
+.logo-img {
+  max-height: 150px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .logo-img {
+    max-height: 80px;
+    margin: 0 auto;
+  }
+}
+
+
