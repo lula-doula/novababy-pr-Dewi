@@ -1859,7 +1859,7 @@ section,
   display: block;
   position: fixed;
   top: 10vh;         /* Separado del top */
-  left: 30%;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
@@ -1882,7 +1882,7 @@ section,
 /* Ajuste para móvil en estado final */
 @media (max-width: 600px) {
   .header.shrink-logo .logo img {
-    max-height: 80px;
+    max-height: 90px;
     max-width: 120px;
     margin-right: 4px;
   }
