@@ -1879,32 +1879,19 @@ section,
   transition: all 0.8s ease;
 }
 
-/* Ajuste para móvil en estado final */
+/* Ajuste para logo en móviles mejorado */
 @media (max-width: 600px) {
-  .header.shrink-logo .logo img {
-    max-height: 90px;
-    max-width: 120px;
-    margin-right: 4px;
-  }
-}
-/* Ajuste del logo en móviles */
-@media (max-width: 600px) {
-  .header .logo img {
-    max-height: 80px;  /* Tamaño más pequeño y proporcional para móvil */
+  .header.shrink-logo .logo img,
+  .header .logo img,
+  .logo-img {
+    max-height: 120px !important; /* Tamaño superior más visible */
+    max-width: 150px !important; /* Mantener proporción */
     margin: 0 auto;
     display: block;
+    transition: max-height 0.3s ease, max-width 0.3s ease;
   }
-}
-.logo-img {
-  max-height: 150px;
-  display: block;
 }
 
-@media (max-width: 600px) {
-  .logo-img {
-    max-height: 80px;
-    margin: 0 auto;
-  }
-}
+
 
 
