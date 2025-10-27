@@ -205,32 +205,5 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
-  // ... todo el código existente ...
-
-/**
- * Clients Slider (para la sección de stickers)
- */
-new Swiper('.clients-slider', {
-  speed: 800,
-  loop: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false
-  },
-  slidesPerView: 'auto',
-  spaceBetween: 60,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true
-  },
-  breakpoints: {
-    320: { slidesPerView: 2, spaceBetween: 20 },
-    480: { slidesPerView: 3, spaceBetween: 30 },
-    640: { slidesPerView: 4, spaceBetween: 40 },
-    992: { slidesPerView: 5, spaceBetween: 50 },
-    1200: { slidesPerView: 6, spaceBetween: 60 }
-  }
-});
 
 })();

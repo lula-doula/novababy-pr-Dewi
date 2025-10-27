@@ -1,154 +1,442 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-PR">
 <head>
-  <meta charset="utf-8" />
-  <!-- Start Favicons from https://realfavicongenerator.net/ -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<link rel="manifest" href="/site.webmanifest" />
-<meta name="msapplication-TileColor" content="#da532c" />
-<meta name="msapplication-config" content="/browserconfig.xml" />
-<meta name="theme-color" content="#ffffff" />
-<!-- End Favicons -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Nova Baby PR | Clases de Preparación al Parto en Puerto Rico</title>
+  
+  <meta name="description" content="Clases y talleres de preparación al parto, lactancia y maternidad en Puerto Rico. Acompañamiento respetuoso con doula certificada.">
+  
+  <meta name="keywords" content="parto en Puerto Rico, doula certificada, clases preparto, lactancia, mindfulness embarazo">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NovaBaby PR – Clases de Parto, Doula y Lactancia en Puerto Rico</title>
-  <meta name="description" content="Lula, educadora perinatal y doula certificada desde 1993. Clases de parto, acompañamiento como doula y consultoría en lactancia a domicilio en San Juan, Caguas, Bayamón y toda Puerto Rico.">
-  
+  <!-- Canonical URL corregida (sin espacios) -->
+  <link rel="canonical" href="https://novababypr.com/">
+
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-  
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://novababypr.com/">
+  <meta property="og:title" content="Nova Baby PR | Clases de Preparación al Parto en Puerto Rico">
+  <meta property="og:description" content="Clases y talleres de preparación al parto, lactancia y maternidad en Puerto Rico. Acompañamiento respetuoso con doula certificada.">
+  <meta property="og:image" content="https://novababypr.com/assets/img/portada.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://novababypr.com/">
+  <meta name="twitter:title" content="Nova Baby PR | Clases de Preparación al Parto en Puerto Rico">
+  <meta name="twitter:description" content="Clases y talleres de preparación al parto, lactancia y maternidad en Puerto Rico. Acompañamiento respetuoso con doula certificada.">
+  <meta name="twitter:image" content="https://novababypr.com/assets/img/portada.png">
+
+  <!-- Fonts corregidas (sin espacios) -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Raleway:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <!-- Vendor CSS -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  
+  <link rel="stylesheet" href="css/blogs.css">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
   <!-- Main CSS -->
-  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
+
 <body class="index-page">
-  <!-- Header -->
+
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center">
-      <a href="/" class="logo me-auto">
-        <img src="assets/img/favicon-nuevo-nb-pr.png" alt="Nova Baby PR" class="logo-img">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo-azul.png" alt="Logo Nova Baby PR" style="height: 250px; width: auto;">
+        <h1 class="sitename visually-hidden">Nova Baby PR</h1>
       </a>
+
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="/" class="active">Inicio</a></li>
-          <li><a href="/clases-de-parto.html">Clases de Parto</a></li>
-          <li><a href="/doula.html">Doula</a></li>
-          <li><a href="/lactancia.html">Lactancia</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <a class="cta-btn" href="#about">Get Started</a>
+
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero section dark-background">
-    <img src="assets/img/perfect-stretch.jpg" alt="NovaBaby PR – Acompañamiento consciente al parto en Puerto Rico">
-    <div class="container d-flex flex-column align-items-center text-center">
-      <h1 class="logo">Nova Baby PR</h1>
-      <h2>Clases de Parto • Doula • Lactancia en Puerto Rico</h2>
-      <p class="mt-3">Más de 30 años acompañando a mamás con respeto, ciencia y corazón.  
-        Clases privadas a domicilio en San Juan, Caguas, Bayamón y virtuales en toda la isla.</p>
-      
-      <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
-        <a href="/clases-de-parto.html" class="btn-get-started">📚 Clases de Parto</a>
-        <a href="/doula.html" class="btn-get-started">❤️ Acompañamiento como Doula</a>
-        <a href="https://wa.me/17876053565" target="_blank" class="btn-get-started">
-          <i class="bi bi-whatsapp"></i> Escríbeme
-        </a>
-      </div>
-    </div>
-  </section>
+  <main class="main">
 
-  <!-- Featured Services (Mini Cards) -->
-  <section class="section light-background">
-    <div class="container">
-      <div class="row gy-4 text-center">
-        <div class="col-md-4">
-          <div class="py-4">
-            <i class="bi bi-book h1 text-primary mb-3"></i>
-            <h3>Clases de Parto</h3>
-            <p>Psicoprofilaxis Obstétrica a domicilio o en línea. Prepárate con confianza.</p>
-            <a href="/clases-de-parto.html" class="text-decoration-none">Más información →</a>
-          </div>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/portada.png" alt="Mujer embarazada en meditación, Nova Baby PR" data-aos="fade-in">
+      <div class="container d-flex flex-column align-items-center">
+        <h1 data-aos="fade-up" data-aos-delay="100">Embarazo.Parto.Lactancia</h1>
+        <p data-aos="fade-up" data-aos-delay="200">Clases y Talleres de Preparación al Parto y la Maternidad en P.R.</p>
+        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="https://wa.me/17876053565?text=Hola,%20quiero%20más%20información" target="_blank" class="contact-link">Contáctanos</a>
+          <a href="assets/videos/hero-video-two.mp4" class="glightbox btn-watch-video d-flex align-items-center" data-glightbox="type: video">
+            <i class="bi bi-play-circle"></i><span>Ver Video</span>
+          </a>
         </div>
-        <div class="col-md-4">
-          <div class="py-4">
-            <i class="bi bi-person-heart h1 text-primary mb-3"></i>
-            <h3>Doula Certificada</h3>
-            <p>Acompañamiento continuo antes, durante y después del parto.</p>
-            <a href="/doula.html" class="text-decoration-none">Conoce mi enfoque →</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3>Educación Integral al Parto</h3>
+            <img src="assets/img/imagen-lula-rojo.png" class="img-fluid rounded-4 mb-4" alt="Maria De Lourdes Pérez">
+            <p>Trabajo con la educación integral al parto, un proceso de aprendizaje y preparación que abarca múltiples dimensiones: física, emocional, psicológica, social y espiritual, con el objetivo de que la mujer embarazada y su acompañante se sientan seguros, informados y empoderados frente al nacimiento de su bebé.</p>
+            <p>Este tipo de educación busca no solo informar sobre cómo ocurre el parto, sino también preparar a la mujer y su entorno para vivir este proceso de manera consciente, respetada y con autonomía. No se trata solo de "saber qué va a pasar", sino de sentirse capaz de enfrentarlo con confianza.</p>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="py-4">
-            <i class="bi bi-house-up h1 text-primary mb-3"></i>
-            <h3>Lactancia Materna</h3>
-            <p>Consultoría personalizada en la comodidad de tu hogar.</p>
-            <a href="/lactancia.html" class="text-decoration-none">Apoyo posparto →</a>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5">
+              <p><strong>Soy Maria De Lourdes Pérez</strong>, Educadora Prenatal certificada bajo el <span>Método Psicoprofilaxis Obstétrico,</span> desde 1993, reconocida por <span>opp, Puerto Rico</span> y <span>DONA International</span>. Como esposa, madre y abuela, aporto experiencia y compromiso profundo en cada proceso de acompañamiento al parto.</p>
+              <p>Cuento con la preparación y cumplimiento de los requisitos que demandan hospitales y médicos, ofreciendo un acompañamiento <span>respetuoso</span>, <span>ecuánime</span> y profesional, enfocado en la seguridad y bienestar de la madre y el bebé.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Testimonial Highlight -->
-  <section class="section">
-    <div class="container text-center">
-      <blockquote class="fst-italic text-muted" style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
-        “Gracias a Lula, viví un parto natural tras 20 horas de trabajo de parto.  
-        Sus ejercicios y su presencia me dieron la calma que necesitaba.”
-      </blockquote>
-      <p class="mt-3"><strong>— Mari T., San Juan</strong></p>
-    </div>
-  </section>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es la educación integral al parto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La educación integral al parto es un proceso de aprendizaje y preparación física, emocional y social para enfrentar el nacimiento con seguridad y confianza."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué servicios ofrece Nova Baby PR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ofrecemos clases preparatorias al parto, talleres de mindfulness, acompañamiento doula certificado y apoyo en lactancia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo contactar para más información?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puedes contactarnos vía WhatsApp al +1 787-605-3565 o por correo electrónico a email-novababy1128@gmail.com."
+      }
+    }
+  ]
+}
+</script>
 
-  <!-- Contact CTA -->
-  <section id="contact" class="section dark-background text-center">
-    <div class="container">
-      <h2>¿Listas para comenzar?</h2>
-      <p class="mb-4">Escríbeme por WhatsApp para una consulta gratuita.</p>
-      <a href="https://wa.me/17876053565" target="_blank" class="btn-get-started">
-        <i class="bi bi-whatsapp me-2"></i> Contáctame ahora
-      </a>
-    </div>
-  </section>
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-people color-blue flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="2" class="purecounter"></span>
+                <p>Madres acompañadas</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-calendar-check color-green flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="2" class="purecounter"></span>
+                <p>Años de experiencia</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-heart-pulse color-red flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="2" class="purecounter"></span>
+                <p>Partos exitosos acompañados</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="bi bi-award color-gold flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="2" class="purecounter"></span>
+                <p>Certificaciones internacionales</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer dark-background">
-    <div class="container text-center py-4">
-      <p>© 2025 NovaBabyPR. Todos los derechos reservados.</p>
-      <p>San Juan, Puerto Rico | +1 787-605-3565</p>
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Personalizados, particulares</h2>
+        <p>Servicios</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5">
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/servicios-clases-talleres.png" class="img-fluid" alt="mujer embarazada en posición relajada y meditación">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <a href="service-details-clases.html" class="stretched-link">
+                  <h3>Preparación y educación integral</h3>
+                </a>
+                <p>Con técnicas avanzadas que fortalecen y apoyan tu proceso de parto, para que vivas una experiencia consciente, segura y empoderada.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/sevicio-taller.png" class="img-fluid" alt="mujer embarazada en posición relajada y meditación">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-easel"></i>
+                </div>
+                <a href="service-details-mindfulness.html" class="stretched-link">
+                  <h3>Nuevo Taller</h3>
+                </a>
+                <p>Taller de Mindfulness y Consciencia Corporal. Diseñado para acompañar a mujeres embarazadas en un viaje de atención plena, relajación y conexión profunda con su cuerpo. Aprende técnicas efectivas para manejar el estrés, potenciar tu bienestar emocional y prepararte física y mentalmente para un parto tranquilo y consciente.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/sevicio-Doula.png" class="img-fluid" alt="Doula Lula con embarazada en cuclilla">
+              </div>
+              <div class="details position-relative">
+                <div class="icon">
+                  <i class="bi bi-broadcast"></i>
+                </div>
+                <a href="service-details-doula.html" class="stretched-link">
+                  <h3>Doula de Parto</h3>
+                </a>
+                <p>Como doula de parto, te acompaño con apoyo emocional y físico para que vivas tu embarazo y parto con seguridad, confianza y respeto. Estoy aquí para ayudarte a manejar el estrés y fortalecer tu bienestar en cada etapa del proceso.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="services-2" class="services-2 section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Blogs y Recursos</h2>
+        <p>Explora nuestros contenidos destacados</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-book icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="Blog-starter-consejo-primeriza.html" class="stretched-link">Consejos para Primerizas</a></h4>
+                <p class="description">Guía esencial para quienes se preparan para su primer embarazo y parto.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-heart-pulse icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="Blog-starter-nacimiento-respetado.html" class="stretched-link">Nacimiento Respetado</a></h4>
+                <p class="description">Aprende sobre la importancia del parto con respeto y acompañamiento consciente.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex position-relative h-100">
+              <i class="bi bi-droplet icon flex-shrink-0"></i>
+              <div>
+                <h4 class="title"><a href="Blog-starter-precolastro.html" class="stretched-link">Precalostro y Lactancia Temprana</a></h4>
+                <p class="description">Descubre la diferencia entre precalostro y calostro, y su relevancia en el embarazo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+      <img src="assets/img/portada.png" class="testimonials-bg" alt="Fondo testimonios">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+          <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Service",
+    "name": "Acompañamiento doula y talleres Nova Baby PR"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Xiara"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "reviewBody": "Mi experiencia con Lula fue espectacular, desde la teoría hasta la práctica. Su conocimiento, confianza y dulzura fueron clave para nuestro parto soñado.",
+  "datePublished": "2025-05-01"
+}
+</script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/xiara.png" class="testimonial-img" alt="Xiara y su bebé">
+                <h3>Xiara</h3>
+                <h4>Empresaria & educadoea empresaral</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Mi experiencia con Lula fue espectacular, desde la teoría hasta la práctica. Su conocimiento, confianza y dulzura fueron clave para nuestro parto soñado. Me ayudó a sentirme en paz, segura y feliz. Gracias, Lula, por tu entrega y por guiarnos en este hermoso proceso. Siempre te recordaremos con cariño como parte de nuestra familia, pues nos ayudaste a traer al mundo a nuestro tesoro más preciado. </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <p>Contáctanos para más información sobre nuestros servicios en Puerto Rico.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="row gy-4">
+              <div class="col-lg-12">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Contáctanos</h3>
+                  <p>Clases a domicilio y virtuales en Puerto Rico</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-whatsapp"></i>
+                  <h3>WhatsApp</h3>
+                  <p><a href="https://wa.me/17876053565" target="_blank">+1 787-605-3565</a></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email</h3>
+                  <p>email-novababy1128@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex align-items-center">
+            <div class="w-100" data-aos="fade-up" data-aos-delay="500">
+              <iframe src="https://whatsform.com/6RpjqL" width="100%" height="500" frameborder="0" scrolling="no" style="border:none; overflow:hidden; border-radius: 8px;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-6 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Nova Baby PR</span>
+          </a>
+          <p class="mt-3">Clases de preparación al parto, acompañamiento con doula certificada y talleres de mindfulness en Puerto Rico.</p>
+          <div class="footer-contact pt-3">
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/17876053565" target="_blank" style="color: #fff;">+1 787-605-3565</a></p>
+            <p><strong>Email:</strong> email-novababy1128@gmail.com</p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://twitter.com/novababypr" target="_blank" rel="noopener"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/novababy" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/novababypr/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Enlaces</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#hero">Inicio</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#about">Sobre mí</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Servicios</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <h4>¿Listas para empezar?</h4>
+          <p>¡Escríbeme por WhatsApp para agendar tu primera consulta!</p>
+          <a href="https://wa.me/17876053565?text=Hola,%20quiero%20más%20información" 
+             target="_blank" 
+             class="btn btn-success" 
+             style="background-color: #25D366; color: white; text-decoration: none; padding: 8px 16px; border-radius: 6px; display: inline-block; margin-top: 10px;">
+            <i class="bi bi-whatsapp"></i> Contáctame
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>2025</span> <strong class="px-1 sitename">Nova Baby PR</strong>. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i>
-  </a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
 
-  <!-- Vendor JS -->
+  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Simple scroll behavior (optional)
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>

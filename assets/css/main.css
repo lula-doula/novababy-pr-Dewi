@@ -237,7 +237,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 150px;
+  max-height: 250px;
   margin-right: 8px;
 }
 
@@ -932,7 +932,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 60%);
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1360,11 +1360,17 @@ section,
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 100px;
-  border-radius: 50%;
-  border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  margin: 0 auto;
+  width: 80px;          /* Tamaño controlado */
+  height: 80px;         /* Altura requerida para mantener proporción */
+  object-fit: cover;    /* Ajusta la imagen dentro del contenedor, recortando si es necesario */
+  border-radius: 50%;   /* Imagen circular */
+  border: 4px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  margin: 0 auto 15px auto;
+  display: block;
+  max-width: 100%;      /* Previene que la imagen supere el contenedor */
 }
+
+
 
 .testimonials .testimonial-item h3 {
   font-size: 20px;
@@ -1838,60 +1844,17 @@ section,
   color: var(--accent-color);
 }
 
+#clients, #features {
+  display: none !important;
+}
+#portfolio, #team {
+  display: none !important;
+}
+
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
 }
-/* Ajuste de logo para móvil */
-@media (max-width: 768px) {
-  .logo-mobile {
-    max-height: 40px !important;
-    height: auto !important;
-  }
-}
-/* Estado inicial: logo grande, centrado y ocupando parte de la pantalla */
-.header.expand-logo .logo img {
-  max-height: 90vh;  /* Logo casi 60% de la altura de la ventana */
-  max-width: 120vw;   /* Logo ancho máxima 90% viewport */
-  margin: 0 auto;
-  display: block;
-  position: fixed;
-  top: 10vh;         /* Separado del top */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-  border-radius: 16px;
-  transition: all 0.8s ease;
-}
-
-/* Estado final: logo más pequeño pero visible en header */
-.header.shrink-logo .logo img {
-  max-height: 110px;   /* Tamaño un poco más grande que antes */
-  max-width: 160px;
-  position: static;
-  margin-right: 8px;
-  transform: none;
-  box-shadow: none;
-  border-radius: 0;
-  transition: all 0.8s ease;
-}
-
-/* Ajuste para logo en móviles mejorado */
-@media (max-width: 600px) {
-  .header.shrink-logo .logo img,
-  .header .logo img,
-  .logo-img {
-    max-height: 120px !important; /* Tamaño superior más visible */
-    max-width: 150px !important; /* Mantener proporción */
-    margin: 0 auto;
-    display: block;
-    transition: max-height 0.3s ease, max-width 0.3s ease;
-  }
-}
-
-
-
-
